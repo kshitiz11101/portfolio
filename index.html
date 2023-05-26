@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kshitiz Sharma</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Poppins:ital,wght@0,400;1,700&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Add responsive styles here */
+        @media (max-width: 890px) {
+            .first {
+                flex-direction: column;
+            }
+
+            .left-section {
+                text-align: center;
+            }
+
+            .right-section {
+                display: none;
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            .left-section,
+            .right-section {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="left">My Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Programming Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#reachme">Reach me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="first">
+            <div class="left-section">
+                Hi, I'm <span class="purple">Kshitiz Sharma</span>
+                <div>and I'm </div>
+                <span id="element"></span>
+            </div>
+            <div class="right-section">
+                <img src="bg1.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section id="about" class="second-section">
+            <h3>About Me</h3>
+            <p>Ambitious and highly motivated fresher with a passion for technology, skilled in DSA and Frontend Web
+                development. Confident in contributing to innovative projects with strong communication and
+                problem-solving skills. Excited to join a dynamic and collaborative team to further develop skills and
+                grow as a professional.</p>
+            <div class="box"></div>
+        </section>
+        <hr>
+        <section id="education" class="third-section">
+            <h3>Education</h3>
+            <p>B.tech in Computer Science & Engineering</p>
+            <p>Maharaja Surajmal Institute of Technology, Janakpuri east, Delhi</p>
+            <p>2021 - Current | 2nd year student</p>
+            <p>CGPA: 9.7 (up to 2nd Sem)</p>
+            <div class="box"></div>
+        </section>
+        <hr>
+        <section id="skills" class="fourth-section">
+            <h3>Programming Skills</h3>
+            <p>C/C++/HTML/CSS/JavaScript/Data Structures and Algorithms/OOPS/SQL</p>
+            <div class="box"></div>
+        </section>
+        <hr>
+        <section id="projects" class="fifth-section">
+            <h3>Projects</h3>
+            <ul>
+                <li>
+                    <a href="https://github.com/kshitiz11101/YummyBites">Yummy-Bites</a>
+                </li>
+                <li>
+                    <a href="https://github.com/kshitiz11101/Sharma-Gym-Club">Sharma-Gym-Club</a>
+                </li>
+                <li>
+                    <a href="https://github.com/kshitiz11101/Credit-Card-Validator">Credit-Card-Validator</a>
+                </li>
+            </ul>
+            <div class="box"></div>
+        </section>
+        <hr>
+    </main>
+
+    <section id="reachme" class="sixth-section">
+        <div class="my-links">
+            <h3>Reach Me</h3>
+            <ul>
+                <li><a href="https://github.com/kshitiz11101"><i class="fab fa-github"></i>Github</a></li>
+                <li><a href="https://www.linkedin.com/in/kshitiz-sharma-85207223b/"><i class="fab fa-linkedin"></i>Linkedin</a></li>
+                <li><a href="https://twitter.com/kshitiz24451721"><i class="fab fa-twitter"></i>Twitter</a></li>
+            </ul>
+        </div>
+        <div class="center">
+            Copyright &copy; My-Portfolio All rights reserved!
+        </div>
+        <hr>
+    </section>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- <script>        
+        function runTypedLoop() {
+            var typed = new Typed('#element', {
+                strings: ['a Frontend Developer....', 'a DSA Learner....', 'an Open Source Enthusiast....'],
+                typeSpeed: 45,
+            });
+
+            // Destroy the Typed instance after typing is complete
+            typed.onComplete(function () {
+                typed.destroy();
+            });
+        }
+
+        // Run the function initially
+        runTypedLoop();
+
+        // Call the function repeatedly after a certain time interval
+        setInterval(function () {
+            runTypedLoop();
+        }, 5000); // Adjust the time interval as needed
+    </script> -->
+     <script>
+        var typed = new Typed("#element", {
+            strings: ["developers.", "founders.", "designers."],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        })
+        var btn = document.getElementById("btn");
+        btn.onclick = function () {
+            open(index2.html)
+        }
+    </script>
+</body>
+
+</html>
